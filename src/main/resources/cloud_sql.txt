@@ -1,0 +1,14 @@
+CREATE TABLE tbl_order(ID VARCHAR(25) PRIMARY KEY, ORDERID VARCHAR(25), CUSTOMERID VARCHAR(50), ORDERDATE Timestamp);
+CREATE TABLE tbl_task_status(ID VARCHAR(25) PRIMARY KEY, ORDERID VARCHAR(25),TASKID VARCHAR(25), STATUS VARCHAR(50), STARTED Timestamp, ENDED Timestamp);
+CREATE TABLE tbl_task_details(TASKID VARCHAR(25) PRIMARY KEY, NAME VARCHAR(50), SUBFLOW VARCHAR(50), TYPE VARCHAR(20), DESCRIPTION VARCHAR(250), DEPT VARCHAR(50));
+
+INSERT INTO tbl_task_details VALUES ('TASK01','auto_order_collection_started','order_collection_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK02','auto_order_screening','order_collection_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK03','auto_order_type_classification','order_collection_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK04','auto_Post_order_staging','order_collection_sub_flow','AUTO','TBD','TBD');
+
+INSERT INTO tbl_task_details VALUES ('TASK05','auto_validate_customer_entity','order_validation_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK06','auto_validate_billing_address','order_validation_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK07','auto_validate_order_entities','order_validation_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK08','auto_validate_auth_entities','order_validation_sub_flow','AUTO','TBD','TBD');
+INSERT INTO tbl_task_details VALUES ('TASK09','auto_send_notification','order_validation_sub_flow','AUTO','TBD','TBD');

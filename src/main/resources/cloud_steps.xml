@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud_vm_provisioning_flow orderid="cloud001" customerid="cust001">
+ <order_collection_sub_flow status="notstarted">
+  <task id="task01" name="auto_order_collection_started" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task02" name="auto_order_screening" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task03" name="auto_order_type_classification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task04" name="auto_post_order_staging" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+ </order_collection_sub_flow>
+ <order_validation_sub_flow status="notstarted">
+   <task id="task05" name="auto_validate_customer_entity" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task06" name="auto_validate_billing_address" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task07" name="auto_validate_order_entities" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task08" name="auto_validate_auth_entities" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task09" name="auto_send_notification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+ </order_validation_sub_flow> 
+ <order_approval_sub_flow status="notstarted">
+   <task id="task10" name="manual_order_approval" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task11" name="manual_billing_approval" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task12" name="auto_offer_approval" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task13" name="auto_sla_agreement_notification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task14" name="manual_sla_user_acceptence" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+ </order_approval_sub_flow>  
+ <order_provisioning_sub_flow status="notstarted">
+  <task id="task15" name="auto_load_requirement_parameters" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task16" name="auto_identify_vm_data_center_location" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task17" name="auto_select_server_from_serverpool" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task18" name="auto_configure_storage_resources" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task19" name="manual_review_physical_resources_allocation" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task20" name="auto_audit_hardware_resources_allocation" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task21" name="auto_load_operating_system" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task22" name="auto_install_device_drivers_middlewares" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task23" name="manual_customizing_and_configuring_system_properties" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task24" name="auto_install_packaged_custom_softwares_and_applications" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task25" name="auto_audit_software_resource_allocation" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task26" name="manual_configure_network_lan_wan_plugins" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task27" name="auto_configure_ip_address_and_ip_Gateway_with_associated_network" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task28" name="auto_reboot_system" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task29" name="auto_verify_network_availability" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task30" name="auto_audit_network_resource_allocation" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task31" name="auto_ensure_oval_compliance_certification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task32" name="auto_restart_system" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task33" name="manual_review_system_completeness" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task34" name="auto_intiate_backup_vm_process" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />  
+</order_provisioning_sub_flow> 
+ <order_completion_sub_flow status="notstarted">
+  <task id="task35" name="auto_ping_server_ip" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task36" name="manual_review_and_approve_order" type="manual" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task37" name="auto_audit_order_completion_notification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task38" name="auto_sla_rate_notification" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task39" name="auto_dispatch_post_provisioning_flow" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+  <task id="task40" name="auto_server_provisioning_completed" type="auto" status="notstarted" started="12/12/2010" ended="12/12/2010" />
+ </order_completion_sub_flow>  
+</cloud_vm_provisioning_flow>  
