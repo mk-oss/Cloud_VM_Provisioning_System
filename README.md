@@ -20,11 +20,19 @@ Implementation:
 This has been implemented in a perfect SOA platform where other external systems like GUI’s, web applications, standalone desktop applications can be integrated in ease.
 
 Technology stack:
+
 	Language              – Java SE 6
+	
 	REST Web services     – Jersey 1.8
+	
 	Application container – Spring 3.0.5
+	
 	ORM                   – Hibernate 3.6.3
+	
 	Database              – H2 database 1.3.175
+	
 	Application Server    – Jetty 7.6.8
+	
 	Build tool            – Maven 2
+	
 	Others                – Eclipse, Firefox POSTER plug-in
